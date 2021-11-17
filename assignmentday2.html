@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="https://images.hindustantimes.com/img/2021/06/30/1600x900/Venice,_Italy_1624616876555_1625022162081.jpg" alt="Italy" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="https://www.treehugger.com/thmb/QolJfOYFmxwIH6Sxv5SBqY8Kq-M=/1885x1414/smart/filters:no_upscale()/GettyImages-1273584292-cbcd5f85f4c646d58f7a7fa158dcaaeb.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-12/11/full/1607656152-0479.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<h1>My First Google Map</h1>  
+<div id="map" style="width:400px;height:400px;background:grey"></div>  
+<script>  
+function myMap() {  
+var mapOptions = {  
+    center: new google.maps.LatLng(51.5, -0.12),  
+    zoom: 10,  
+    mapTypeId: google.maps.MapTypeId.HYBRID  
+}  
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
+}  
+</script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<h1>My First Video</h1>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+</body>
+</html>
